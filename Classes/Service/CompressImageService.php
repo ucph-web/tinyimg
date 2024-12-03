@@ -110,7 +110,7 @@ class CompressImageService implements SingletonInterface
             return;
         }
 
-        if (!in_array(strtolower($file->getMimeType()), ['image/png', 'image/jpeg'], true)) {
+        if (!in_array(strtolower($file->getMimeType()), ['image/png', 'image/jpeg', 'image/webp', 'image/apng'], true)) {
             return;
         }
 
